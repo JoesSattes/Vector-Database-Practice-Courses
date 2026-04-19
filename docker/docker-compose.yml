@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  # Service 1: The Brain (Interactive Python Environment)
+  notebook-env:
+    image: jupyter/scipy-notebook:latest
+    container_name: vector-db-course-jupyter
+    ports:
+      - "8888:8888" # Jupyter Interface
+    volumes:
+      - ..:/home/jovyan/work # Mount project root to work folder
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - GRANT_SUDO=yes
+    user: root
+    # Zero-Build: Install specific libraries on container start to avoid dev variance
+    command: >
+      sh -c "pip install --no-cache-dir faiss-cpu redisvl sentence-transformers networkx && 
+             start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''"
+
+  # Service 2: The Muscle (Redis Vector Database)
+  redis-vector-db:
+    image: redis/redis-stack:latest
+    container_name: vector-db-course-redis
+    ports:
+      - "6379:6379"  # Database Port (External access)
+      - "8001:8001"  # RedisInsight UI Port
+    environment:
+      - REDIS_ARGS="--requirepass ''"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+volumes:
+  redis_data:
