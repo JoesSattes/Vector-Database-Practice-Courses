@@ -15,7 +15,7 @@ services:
     user: root
     # Zero-Build: Install specific libraries on container start to avoid dev variance
     command: >
-      sh -c "pip install --no-cache-dir faiss-cpu redisvl sentence-transformers networkx && 
+      sh -c "pip install --no-cache-dir faiss-cpu redisvl sentence-transformers networkx fastapi uvicorn httpx && 
              start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''"
 
   # Service 2: The Muscle (Redis Vector Database)

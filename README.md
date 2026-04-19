@@ -6,19 +6,25 @@ Welcome to the definitive hands-on curriculum for Vector Databases and Semantic 
 
 ## 🗺️ Curriculum Roadmap
 
-### 📅 Day 1: The Core Foundations
-Master the math, the algorithms, and the industrial indexers.
+### 📅 Day 1: Foundations & Core RedisVL
+Master the math and the basics of Vector Databases with granular, step-by-step labs.
 
 | Notebook | Topic | Description |
 | :--- | :--- | :--- |
-| **0. Docker Environment** | `docker/` | Master Multi-Container architecture, DNS networking, and data persistence. |
-| **1. Vector Foundations** | `foundation/` | The math of Cosine Similarity, Dot Product, and Product Quantization (PQ). |
-| **2. FAISS Deep Dive** | `foundation/` | Benchmarking IVF, HNSW, and Radius Search using industry-standard C++ builders. |
-| **3. Redis-Vector-DB** | `redis/` | Deploying RedisVL for hybrid filtering, under-the-hood processing, and semantic caching. |
-| **Capstone Assignment** | `redis/` | Build a "VIP Recommendation Sandbox" from scratch with automated verifiers. |
+| **0. Environment** | `docker/` | Master Multi-Container Architecture and Internal DNS. |
+| **1. Math & Theory** | `foundation/` | Euclidean vs Cosine, IVF/PQ algorithms from scratch. |
+| **2. FAISS Deep-Dive** | `foundation/` | Benchmarking HNSW and detecting near-duplicates. |
+| **3. Redis-Vector-DB** | `redis/` | Hybrid schemas, Geo-discovery, and Semantic Caching. |
+| **Capstone Project** | `redis/` | Build a "VIP Recommendation Sandbox" with auto-verifiers. |
 
-### 📅 Day 2: AI-Agent & RAG Services
-*Coming Soon: Building end-to-end services with LLM integration.*
+### 📅 Day 2: Advanced Engineering & RAG Blueprint
+The production masterclass consolidated into two high-density sessions.
+
+| Notebook | Topic | Description |
+| :--- | :--- | :--- |
+| **4. Advanced Engineering** | `redis/` | **Masterclass**: Async Pipelines, Hybrid RRF, Semantic Memory, Intent Routing, and Index DevOps/CLI. |
+| **5. Production RAG** | `app/` | **Blueprint**: Deep Ingestion (Propositions), Multi-Modal CLIP Search, and RAG Evaluators. |
+| **6. API Deployment** | `app/` | **Scaling**: Building a production-grade **FastAPI** service with Async Connection Pooling. |
 
 ---
 
