@@ -1,0 +1,1 @@
+Bulletin 28: Technical update for peripheral model 280. Firmware version 28.2 released.

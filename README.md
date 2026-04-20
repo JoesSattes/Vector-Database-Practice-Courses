@@ -49,7 +49,7 @@ Everything is pre-configured. Run the following command from the root directory:
 
 ```bash
 cd docker
-docker-compose up -d
+docker compose up -d
 ```
 
 ### 3. Access the Tools

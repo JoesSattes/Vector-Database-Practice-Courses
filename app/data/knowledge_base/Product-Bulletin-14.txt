@@ -1,0 +1,1 @@
+Bulletin 14: Technical update for peripheral model 140. Firmware version 14.2 released.

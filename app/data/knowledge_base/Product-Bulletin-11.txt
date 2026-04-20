@@ -1,0 +1,1 @@
+Bulletin 11: Technical update for peripheral model 110. Firmware version 11.2 released.

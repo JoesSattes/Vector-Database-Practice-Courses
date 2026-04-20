@@ -1,0 +1,1 @@
+Bulletin 21: Technical update for peripheral model 210. Firmware version 21.2 released.

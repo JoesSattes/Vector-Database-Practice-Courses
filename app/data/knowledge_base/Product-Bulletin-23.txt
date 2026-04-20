@@ -1,0 +1,1 @@
+Bulletin 23: Technical update for peripheral model 230. Firmware version 23.2 released.

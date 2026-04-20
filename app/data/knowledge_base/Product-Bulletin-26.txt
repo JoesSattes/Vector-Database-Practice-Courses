@@ -1,0 +1,1 @@
+Bulletin 26: Technical update for peripheral model 260. Firmware version 26.2 released.

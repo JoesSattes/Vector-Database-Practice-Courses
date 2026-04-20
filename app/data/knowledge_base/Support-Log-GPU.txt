@@ -1,0 +1,1 @@
+Ticket #404: User reports GPU thermal throttling on X1-Flagship. Recommended solution: Flush liquid reservoir.

@@ -1,0 +1,1 @@
+Bulletin 17: Technical update for peripheral model 170. Firmware version 17.2 released.

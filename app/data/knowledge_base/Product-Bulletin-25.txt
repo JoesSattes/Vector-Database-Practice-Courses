@@ -1,0 +1,1 @@
+Bulletin 25: Technical update for peripheral model 250. Firmware version 25.2 released.

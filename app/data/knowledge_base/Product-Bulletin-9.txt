@@ -1,0 +1,1 @@
+Bulletin 9: Technical update for peripheral model 90. Firmware version 9.2 released.
