@@ -1,0 +1,1 @@
+Bulletin 30: Technical update for peripheral model 300. Firmware version 30.2 released.

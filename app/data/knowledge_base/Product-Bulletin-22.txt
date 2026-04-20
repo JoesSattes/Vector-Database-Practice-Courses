@@ -1,0 +1,1 @@
+Bulletin 22: Technical update for peripheral model 220. Firmware version 22.2 released.

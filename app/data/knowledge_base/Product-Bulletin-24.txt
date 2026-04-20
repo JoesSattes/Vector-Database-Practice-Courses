@@ -1,0 +1,1 @@
+Bulletin 24: Technical update for peripheral model 240. Firmware version 24.2 released.

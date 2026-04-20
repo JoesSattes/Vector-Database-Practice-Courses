@@ -1,0 +1,1 @@
+Bulletin 19: Technical update for peripheral model 190. Firmware version 19.2 released.

@@ -1,0 +1,1 @@
+Bulletin 16: Technical update for peripheral model 160. Firmware version 16.2 released.

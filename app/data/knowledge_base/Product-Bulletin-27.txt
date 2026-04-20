@@ -1,0 +1,1 @@
+Bulletin 27: Technical update for peripheral model 270. Firmware version 27.2 released.

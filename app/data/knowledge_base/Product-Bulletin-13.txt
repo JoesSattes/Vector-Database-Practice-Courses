@@ -1,0 +1,1 @@
+Bulletin 13: Technical update for peripheral model 130. Firmware version 13.2 released.

@@ -1,0 +1,1 @@
+Bulletin 18: Technical update for peripheral model 180. Firmware version 18.2 released.

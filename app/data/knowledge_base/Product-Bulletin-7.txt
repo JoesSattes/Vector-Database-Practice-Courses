@@ -1,0 +1,1 @@
+Bulletin 7: Technical update for peripheral model 70. Firmware version 7.2 released.

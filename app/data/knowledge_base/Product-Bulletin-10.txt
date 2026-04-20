@@ -1,0 +1,1 @@
+Bulletin 10: Technical update for peripheral model 100. Firmware version 10.2 released.
