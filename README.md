@@ -40,6 +40,8 @@ The production masterclass consolidated into two high-density sessions.
 
 ## 🚀 Getting Started
 
+For installation guide, please refer to [INSTALLATIO GUIDE](https://docs.google.com/document/d/1H8pMuY0zIUZilTgAcXnI8vzflfOIh8cR2SAALI0VEj0).
+
 ### 1. Prerequisites
 - [Docker & Docker Compose](https://www.docker.com/get-started) installed.
 - Python 3.9+ (Optional: Only if running the generator script).
