@@ -7,6 +7,7 @@ services:
     container_name: vector-db-course-jupyter
     ports:
       - "8888:8888" # Jupyter Interface
+      - "8000:8000" # FastAPI Interface (for interactive dev)
     volumes:
       - ..:/home/jovyan/work # Mount project root to work folder
     environment:

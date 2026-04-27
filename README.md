@@ -17,14 +17,19 @@ Master the math and the basics of Vector Databases with granular, step-by-step l
 | **3. Redis-Vector-DB** | `redis/` | Hybrid schemas, Geo-discovery, and Semantic Caching. |
 | **Capstone Project** | `redis/` | Build a "VIP Recommendation Sandbox" with auto-verifiers. |
 
-### 📅 Day 2: Advanced Engineering & RAG Blueprint
-The production masterclass consolidated into two high-density sessions.
+### 📅 Day 2: Production RAG Engineering (Micro-Lesson Format)
+Step-by-step workshops with `SHOW_INSIGHTS` instructor toggle and end-of-notebook assignments.
 
-| Notebook | Topic | Description |
+| Notebook | Location | Description |
 | :--- | :--- | :--- |
-| **4. Advanced Engineering** | `redis/` | **Masterclass**: Async Pipelines, Hybrid RRF, Semantic Memory, Intent Routing, and Index DevOps/CLI. |
-| **5. Production RAG** | `app/` | **Blueprint**: Deep Ingestion (Propositions), Multi-Modal CLIP Search, and RAG Evaluators. |
-| **6. API Deployment** | `app/` | **Scaling**: Building a production-grade **FastAPI** service with Async Connection Pooling. |
+| **D2-NB00. RAG Foundations** | `day2/notebooks/` | Theory: RAG taxonomy, chunking strategies, RAGAS metrics, failure modes. |
+| **D2-NB01. Async & Scale** | `day2/notebooks/` | `AsyncSearchIndex`, `asyncio.gather`, throughput benchmarking, retry logic. |
+| **D2-NB02. Hybrid Search + RRF** | `day2/notebooks/` | `VectorQuery` with `Tag`/`Num`/`Text` filters; Reciprocal Rank Fusion from scratch. |
+| **D2-NB03. Agent Memory** | `day2/notebooks/` | `SemanticMessageHistory`, token budgeting, TTL expiry, multi-user sessions. |
+| **D2-NB04. Production RAG** | `day2/notebooks/` | `HFTextVectorizer`, `SemanticCache`, PDR pattern, intent routing, 3-layer pipeline. |
+| **D2-NB05. RAG Evaluation** | `day2/notebooks/` | RAGAS-style metrics from scratch, golden dataset, hallucination guard, regression testing. |
+| **D2-NB06. FastAPI Server** | `day2/notebooks/` | Interactive FastAPI development directly inside Jupyter using `uvicorn.run`. |
+| **D2-NB07. FastAPI Client** | `day2/notebooks/` | Call the running RAG API, cache warmup, latency analysis, load testing. |
 
 ---
 
@@ -40,17 +45,27 @@ The production masterclass consolidated into two high-density sessions.
 
 ## 🚀 Getting Started
 
+For installation guide, please refer to [INSTALLATION GUIDE](https://docs.google.com/document/d/1H8pMuY0zIUZilTgAcXnI8vzflfOIh8cR2SAALI0VEj0).
+
 ### 1. Prerequisites
 - [Docker & Docker Compose](https://www.docker.com/get-started) installed.
 - Python 3.9+ (Optional: Only if running the generator script).
 
 ### 2. Launch the Environment
-Everything is pre-configured. Run the following command from the root directory:
 
+**Day 1** — Jupyter + Redis only:
 ```bash
 cd docker
 docker compose up -d
 ```
+
+**Day 2** — Add the FastAPI RAG service:
+```bash
+cd docker
+docker compose --profile day2 up -d
+```
+> The `--profile day2` flag starts the `fastapi-service` container in addition to Jupyter and Redis.
+> Day 1 notebooks are unaffected — the `fastapi-service` only activates when explicitly requested.
 
 ### 3. Access the Tools
 - **Jupyter Notebooks**: Open [http://localhost:8888](http://localhost:8888)
